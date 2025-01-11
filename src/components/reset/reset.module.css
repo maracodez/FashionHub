@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.resetpassword {
+    background-color: #efc8b1;
+    padding-block: 5%;
+    height: 100vh;
+}
+
+.resetpassword div {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.1rem;
+    margin-block-end: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.3rem;
+    padding: 7px;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    height: 6vh;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    padding: 10px;
+    outline: none;
+}
+
+.new input,
+.confirm input {
+    position: relative;
+    margin-block-end: 20px;
+}
+
+#pweye,
+#cpeye {
+    position: absolute;
+    right: 35%;
+    margin-top: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#resetbtn {
+    width: 50%;
+    padding-block: 3%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #9a7b6ac2;
+    border: 2px solid #efc8b1c2;
+    color: #eaad8ac2;
+    cursor: pointer;
+}
+
+#resetbtn:hover {
+    background-color: #d5b9aac2;
+    border: 2px solid #1a1919c2;
+    color: #221d1ac2;
+}
+
+@media (max-width: 890px) {
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+
+    form label {
+        font-size: 1.5rem;
+        padding: 9px;
+    }
+
+    #resetbtn {
+        width: 50%;
+        padding-block: 4%;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    form {
+        margin: 0;
+    }
+
+    form input {
+        margin: 0;
+    }
+
+    #resetbtn {
+        width: 70%;
+        padding-block: 6%;
+    }
+}

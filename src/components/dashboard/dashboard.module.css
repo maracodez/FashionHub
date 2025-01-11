@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard {
+   background-color: #efc8b1 13%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4%;
+    border-bottom: 2px solid #d27b48c2;
+    padding: 10px;
+}
+
+.location,
+.ellipse {
+    cursor: pointer;
+}
+
+.displayLocation {
+    position: absolute;
+    background-color: #efc8b1;
+    opacity: 0.9;
+    top: 10%;
+    padding-inline: 10px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    background-color: #514644;
+    color: #f1c2a7c2;
+    padding-block: 10px;
+    padding-inline: 15px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+svg {
+    width: 5%;
+    cursor: pointer;
+}
+
+#search {
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+    background-color: transparent;
+}
+
+.categ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-block: 20px;
+    padding-inline: 15px;
+}
+
+h5 {
+    background-color: #514644;
+    color: white;
+    border-radius: 30px;
+    width: 15%;
+    padding: 15px;
+    text-align: center;
+}
+
+.frame {
+    display: flex;
+    animation: toAndFro 5s ease infinite;
+    gap: 5%;
+}
+
+@keyframes toAndFro {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.frame img {
+    width: 100%;
+}
+
+.cartopt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 30px;
+    padding: 20px;
+    
+}
+
+select {
+    width: 15%;
+    font-size: 1.3rem;
+    padding: 15px;
+    background-color: #514644;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+select option {
+    background-color: #efc8b1;
+    color: #514644;
+    cursor: pointer;
+}
+
+
+option:focus {
+    outline: none;
+}
+
+.cartico {
+    cursor: pointer;
+    position: relative;
+}
+
+#icon {
+    width: 50px;
+}
+
+.count {
+    position: absolute;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 30%;
+    height: 3vh;
+    top: 0;
+    right: 0;
+    padding-top: 2%;
+} 
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    row-gap: 10%;
+}
+
+.product {
+    position: relative;
+}
+
+.product_img {
+    width: 85%;
+}
+
+.product_img img {
+    width: 100%;
+}
+
+.product_price {
+    position: absolute;
+    background-color: #514644;
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    width: 85%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 20px;
+    left: 0;
+    bottom: 1.5%;
+}
+
+#plus_btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.notify {
+    display: flex;
+    flex-direction: row;
+    background-color: #efc8b1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-inline: 25px;
+    margin-bottom: 15px;
+    margin-top: 4%;
+    position: relative;
+}
+
+#partner,
+#rider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2rem;
+}
+
+#partner a,
+#rider a {
+    text-decoration: none;
+    color: #edad89;
+}
+
+#partner a:hover,
+#rider a:hover {
+    color: #514644;
+}
+
+footer {
+    border-top: #edad89 2px solid;
+    padding-inline: 50px;
+    padding-block: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    cursor: pointer;
+}
+
+.cartcount {
+    position: relative;
+}
+
+.counts {
+    position: absolute;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    width: 55%;
+    height: 2vh;
+    
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+ 
+
+@media (max-width: 890px) {
+   h5 {
+        width: 23%;
+   }
+
+   select {
+        width: 24%;
+        font-size: 1rem;
+   }
+
+   .count {
+        width: 40%;
+        height: 2vh;
+        padding: 5%;
+        font-size: 1rem;
+   }
+
+   .counts {
+        width: 60%;
+        height: 1.4vh;
+        padding: 3%;
+        font-size: 0.8rem;
+   }
+}
+
+@media (max-width: 450px) {
+    h5 {
+        width: 50%;
+   }
+
+   .count {
+        width: 50%;
+        height: 3vh;
+   }
+
+   select {
+        width: 30%;
+        font-size: 0.7rem;
+   }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        width: 100%;
+        gap: 4%;
+    }
+
+    .product_img {
+        width: 100%;
+    }
+
+    .product_price {
+        width: 100%;
+    }
+
+    .notify {
+        gap: 5%;
+        font-size: 1.2rem;
+        margin-inline: 15px;
+        margin-bottom: 8px;
+        margin-top: 4%;
+        position: relative;
+    }
+
+    .counts {
+        width: 60%;
+        height: 2vh;
+    }
+}
+/*
+@media (max-width: 390px) {
+    .product_price {
+        width: 135px;
+    }
+
+    .notify {
+        padding: 15px;
+        font-size: 1rem;
+        margin-inline: 5px;
+        margin-bottom: 5px;
+        column-gap: 8%;
+    }
+
+    footer {
+        border-top: #edad89 2px solid;
+        padding-inline: 20px;
+        padding-block: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 320px) {
+    h5 {
+        width: 65%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .product_price {
+        width: 110px;
+        bottom: 1%;
+    }
+
+    .notify {
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        padding: 10px;
+        font-size: 1.2rem;
+        margin-inline: 5px;
+        margin-bottom: 15px;
+    }
+    
+    #partner,
+    #rider {
+        align-items: center;
+    }
+
+} */

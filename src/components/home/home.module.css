@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+    font-size: 2rem;
+    background-image: url("../src/assets/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: #f1c2a7c2;
+    padding-block: 15%;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home p {
+    margin: 0 auto;
+}
+
+#hub {
+    width: 15%;
+    margin-block-end: 2%;
+}
+
+.home button {
+    width: 15%;
+    padding-block: 1%;
+    margin-block-start: 5%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    background-color: #efc8b1c2;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f37025c2;
+    color: #efc8b1c2;
+}
+
+@media (max-width: 884px) {
+    #hub {
+        width: 30%;
+    }
+
+    .home p {
+        margin: 0 auto;
+    }
+
+    .home button {
+        width: 45%;
+        padding-block: 5%;
+        color: white;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 780px) {
+    #hub {
+        width: 30%;
+    }
+
+    .home p {
+        margin: 0 auto;
+        font-size: 2.4rem;
+    }
+
+    .home button {
+        width: 35%;
+        padding-block: 5%;
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #hub {
+        width: 36%;
+    }
+
+    .home p {
+        text-align: center;
+        font-size: 2rem;
+        padding: 8px;
+    }
+
+    .home button {
+        width: 43%;
+        padding-block: 8%;
+        color: white;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    #hub {
+        width: 38%;
+    }
+
+    .home p {
+       font-size: 1.8rem;
+    }
+
+    .home button {
+        width: 65%;
+        padding-block: 5%;
+        font-size: 1.8rem;
+    }
+}

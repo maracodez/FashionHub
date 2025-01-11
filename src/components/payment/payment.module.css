@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.payment {
+    background-color: #efc8b1;
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#arrow {
+    padding-left: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.paypallogo,
+.cardlogo {
+    border-top: 2px solid #e69668;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form input::placeholder {
+    color: #dc580b;
+    font-size: 1rem;
+    word-spacing: 2rem;
+}
+
+.form input:focus::placeholder {
+    color: #e68b57;
+}
+
+#pay {
+    width: 60%;
+    padding-block: 3%;
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #9a7b6ac2;
+    border: 2px solid #a69e9ac2;
+    color: #efc8b1c2;
+    cursor: pointer;
+}
+
+#pay:hover {
+    background-color: #d5b9aac2;
+    border: 2px solid #1a1919c2;
+    color: #221d1ac2;
+}
+
+@media (max-width: 770px) {
+
+    .form {
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+
+    .form label,
+    .cards label{
+        font-size: 2rem;
+        padding-block: 20px;
+    }
+
+    #pay {
+        width: 70%;
+        height: 8vh;
+        font-size: 1.8rem;
+        margin-left: 15%;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .paypallogo,
+    .cardlogo {
+       margin-inline: 7%;
+    }
+
+    .form label {
+        font-size: 1.8rem;
+        padding-block: 20px;
+    }
+
+    #card_label {
+        font-size: 1.8rem;
+    }
+
+}

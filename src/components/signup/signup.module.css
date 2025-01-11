@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signup {
+    background-color: #EFC8B1 13%;
+    height: 100vh;
+}
+
+.sign {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.head {
+    border-bottom: 2px solid #d5b9aac2;
+    margin-block: 5%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+#arrow {
+    font-size: 1.2rem;
+    padding-right: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.signup_form_pg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#form_label {
+    font-size: 1.3rem;
+    padding: 7px;
+    text-align: left;
+}
+
+#form_input {
+    background-color: aliceblue;
+    width: 100%;
+    height: 6vh;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+#form_input:focus {
+    outline: none;
+}
+
+.hidepassword,
+.showpassword {
+    text-align: left;
+    position: relative;
+}
+
+.hidepassword input,
+.showpassword input {
+    margin-block: 10px;
+}
+
+#hideicon {
+    position: absolute;
+    width: 5%;
+    top: 52%;
+    right: 6%;
+    cursor: pointer;
+}
+
+#showicon {
+    position: absolute;
+    width: 5%;
+    top: 56%;
+    right: 6%;
+    cursor: pointer;
+}
+
+#createacc {
+    width: 100%;
+    padding-block: 5%;
+    margin-top: 5%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #9a7b6ac2;
+    border: 2px solid #efc8b1c2;
+    color: #efc8b1c2;
+    cursor: pointer;
+}
+
+#createacc:hover {
+    background-color: #d5b9aac2;
+    border: 2px solid #1a1919c2;
+    color: #221d1ac2;
+}
+
+#signinacc {
+    font-size: 1.5rem;
+}
+
+#signinacc a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 890px) {
+    .sign {
+        width: 100%;
+    }
+  
+    h2 {
+        font-size: 3.1rem;
+    }
+    
+    #form_label {
+        font-size: 2.1rem;
+    }
+
+    .hidepassword,
+    .showpassword {
+        margin-top: 20px;
+    }
+
+    #hideicon {
+        top: 52%;
+        right: 8%;
+        width: 7%;
+    }
+    
+    #showicon {
+        top: 56%;
+        right: 8%;
+        width: 7%;
+    }
+}
+
+@media (max-width: 800px) {
+    #hideicon {
+        top: 58.3%;
+    }
+    
+    #showicon {
+        top: 68.3%;
+    }
+}
+
+@media (max-width: 770px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+    
+    #form_label {
+        font-size: 2rem;
+    }
+
+    #hideicon,
+    #showicon {
+        top: 50%;
+    }
+
+    #createacc {
+        width: 100%;
+        padding-block: 4%;
+        margin-top: 13%;
+        font-size: 2rem;
+        color: #5a3f24c2;
+    }
+
+    #signinacc {
+        font-size: 1.9rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup {
+        height: 100%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .signup_form_pg {
+        width: 100%;
+        margin: 0;
+        padding: 5%;
+    }
+
+    #form_label {
+        font-size: 1.8rem;
+    }
+
+    #hideicon,
+    #showicon {
+        top: 58%;
+    }
+
+    #signinacc {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    #form_input {
+        height: 9vh;
+        font-size: 1.5rem;
+    }
+}
