@@ -7,9 +7,13 @@ import { useNavigate } from 'react-router-dom'
 const Payment = () => {
 	const navigate = useNavigate();
 
+	const handleBack  = () => {
+		navigate("/checkout")
+	 }
+
   return (
     <div className={styles.payment}>
-		<p id={styles.arrow} onClick={() => navigate(-1)} >&larr;</p>
+		<p id={styles.arrow} onClick={handleBack} >&larr;</p>
 		<div className={styles.container}>
 			<h2>Payment Method</h2>
 			<div className={styles.logos}>
@@ -24,12 +28,12 @@ const Payment = () => {
 				<label>Card holder name</label>
 				<input type="text" id={styles.input}/>
 				<label>Card number</label>
-				<input type="text" placeholder='...........'/>
+				<input type="number" placeholder='...........'/>
 				<div className={styles.cards}>
 					<label id={styles.card_label}>Exp</label>
-					<input type="text" placeholder='Month/year'/>
+					<input type="number" placeholder='Month/year'/>
 					<label id={styles.card_label}>CVV</label>
-					<input type="text" />
+					<input type="number" />
 				</div>
 				
 				<button id={styles.pay}>Confirm Payment</button>

@@ -5,7 +5,7 @@
 }
 
 .cart {
-    background-color: #efc8b1 13%;
+    background-color: #EFC8B121;
     height: 100%;
     padding: 20px;
 }
@@ -195,12 +195,8 @@ h3 {
         height: 5vh;
         font-size: 1.6rem;
         border-radius: 22px;
-        display: flex;
-        justify-content: center;
         top: 13%;
         left: 6%;
-        cursor: pointer;
-        z-index: 1000;
     }
 
     .tag {
@@ -221,83 +217,70 @@ h3 {
         width: 53%;
     }
 }
-/* 
-@media (max-width: 790px) {
-    .cart {
-        height: 100%;
-    }
-}
+ 
 
-@media (max-width: 580px) {
+@media (max-width: 480px) {
+    #itemimage {
+        width: 100%;
+    }
+
     .point {
         width: 8%;
-        height: 5vh;
-        left: 8%;
+        height: 6vh;
+        border-radius: 24px;
+        top: 13%;
+        left: 12%;
     }
 
     .tag {
-        width: 74%;
+        width: 94%;
     }
 
-    #featuresbtn {
+    .features {
+        margin-top: 9%;
+        
+    }
+
+    .features strong {
         width: 50%;
-        border-radius: 25px;
-        font-size: 1.7rem;
-    }
-
-    .code {
-        width: 100%;
-    }
-
-    #buybtn {
-       width: 100%;
-    }
-
-}
-
-@media (max-width: 390px) {
-    #rectangle {
-        width: 100%;
-    }
-
-    .code p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 320px) {
-    .point {
-        width: 10%;
-        height: 8vh;
-        left: 10%;
-        top: 10%;
-    }
-
-    .tag {
-       left: 14%;
-    }
-
-    #featuresbtn {
-        width: 60%;
         font-size: 1.5rem;
     }
 
-    .details ul {
-        line-height: 2rem;
+    .features ul {
         font-size: 1.1rem;
-        padding: 10px;
     }
 
-    .code {
-        border-radius: 10px;
-        padding: 5px;
+    .promo,
+    .buyNowBtn {
+        width: 100%;
     }
 
-    .code input {
-       font-size: 1rem;
+    .promo button {
+        font-size: 1.1rem;
     }
-   
-    #buybtn {
-      font-size: 1.2rem;
+
+}
+
+@media (max-width: 320px) {
+    .cart {
+        padding: 1px;
     }
-} */
+
+    .point {
+        width: 10%;
+        height: 8vh;
+        left: 15%;
+        top: 20%;
+        padding: 3px;
+    }
+
+    .promo  {
+        justify-content: center;
+       border-radius: 10px;
+        padding: 6px;
+    }
+
+    .promo button {
+        font-size: 0.7rem;
+    }
+} 

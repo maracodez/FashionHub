@@ -5,13 +5,12 @@
 }
 
 .payment {
-    background-color: #efc8b1;
-    height: 100%;
+    background-color: #EFC8B121;
+    height: 100dvh;
 }
 
 .container {
     width: 90%;
-    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -28,6 +27,10 @@
 .paypallogo,
 .cardlogo {
     border-top: 2px solid #e69668;
+}
+
+.form input {
+    background-color: white;
 }
 
 .form input:focus {
@@ -89,9 +92,12 @@
 }
 
 @media (max-width: 400px) {
+    .payment {
+        height: 100%;
+    }
+
     .container {
         width: 100%;
-        height: 100%;
         margin: 0;
     }
 
@@ -107,6 +113,27 @@
 
     #card_label {
         font-size: 1.8rem;
+        margin: 20px;
     }
 
+    #pay {
+        width: 100%;
+        height: 10vh;
+        margin-left: 0%;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .payment {
+        height: 100vh;
+    }
+
+   .logos {
+    margin-inline: 15%;
+   }
+
+    .form input {
+        height: 10%;
+    }
 }

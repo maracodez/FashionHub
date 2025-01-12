@@ -43,6 +43,7 @@ const Reset = () => {
   return (
     <div className={styles.resetpassword}>
         <div>
+            <p id={styles.arrow} onClick={() => navigate(-1)}>&lt;</p>
             <h3>Reset password</h3>
             <form onSubmit={handleResetPassword}>
                 <div className={styles.new}>

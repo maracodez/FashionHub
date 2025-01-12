@@ -19,9 +19,6 @@ const Signup = () => {
      navigate("/signin")
   }
 
-  const backFun = () => {
-	navigate("/home")
-  }
 
   //to create account
   const [email, setEmail] = useState("");
@@ -62,9 +59,9 @@ const Signup = () => {
   return (
 		<div className={styles.signup}>
 			<div className={styles.sign}>
+				<p id={styles.arrow} onClick={() => navigate(-1)}>&lt;</p>
 				<div className={styles.head}>
 					<h2>Create your free account.</h2>
-					<p id={styles.arrow} onClick={backFun}>&lt;</p>
 				</div>
 				<form 
 					onSubmit={handleSignup}

@@ -29,6 +29,10 @@ const Dashboard = () => {
 	navigate("/payment")
  }
 
+ const handleSetting  = () => {
+	navigate("/change")
+ }
+
  const products = [
 	{id: 1, name: 'Emel Machine', price:36000, image: rectang},
 	{id: 2, name: 'Butterfly Machine', price:150000, image: rectangl},
@@ -181,7 +185,7 @@ const Dashboard = () => {
 				</div>
 			</div>
 			<img src={group7} alt="" onClick={handlepay}/>
-			<img src={group9} alt="" />
+			<img src={group9} alt="" onClick={handleSetting}/>
 	  </footer>
     </div>
   )

@@ -36,7 +36,7 @@ h1 {
     display: flex;
 }
 
-.cartItem img {
+#itemImage {
     width: 30%;
 }
 
@@ -51,7 +51,7 @@ h1 {
 
 .priceName {
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .priceName h3 {
@@ -119,6 +119,23 @@ h1 {
     background-color: #a1806dc2;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 480px) {
+    #itemImage {
+        width: 40%;
+    }
 
+    .itemDetails {
+        padding: 10px;
+    }
+
+    .priceName h3 {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .quantityControl {
+        width: 40%;
+        border-radius: 20px;
+        text-align: center;
+    }
 }
