@@ -5,7 +5,7 @@
 }
 
 .signin {
-    background-color: #efc8b1;
+    background-color: #EFC8B121;
     padding-block: 5%;
     height: 100vh;
 }
@@ -40,6 +40,7 @@ h3 {
 
 #input {
     width: 100%;
+    background-color: white;
     border-radius: 5px;
     border: none;
     font-size: 1.3rem;
