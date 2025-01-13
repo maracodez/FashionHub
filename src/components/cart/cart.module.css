@@ -6,7 +6,6 @@
 
 .cart {
     background-color: #EFC8B121;
-    height: 100%;
     padding: 20px;
 }
 
@@ -261,6 +260,25 @@ h3 {
 
 }
 
+@media (max-width: 390px) {
+    .point {
+        width: 10%;
+        height: 6vh;
+        left: 15%;
+        top: 15%;
+        padding: 5px;
+    }
+
+    .promo  {
+        border-radius: 10px;
+        padding: 6px;
+    }
+
+    .promo button {
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 320px) {
     .cart {
         padding: 1px;
@@ -276,7 +294,7 @@ h3 {
 
     .promo  {
         justify-content: center;
-       border-radius: 10px;
+        border-radius: 10px;
         padding: 6px;
     }
 

@@ -75,26 +75,27 @@ h5 {
     text-align: center;
 }
 
+.frameContainer {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: none;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
 .frame {
-    display: flex;
-    animation: toAndFro 5s ease infinite;
+    display: inline-block;
     gap: 5%;
 }
 
-@keyframes toAndFro {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-10%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
 .frame img {
-    width: 100%;
+    width: 30%;
+    height: 50vh;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .cartopt {
@@ -209,7 +210,7 @@ option:focus {
     font-size: 1.2rem;
     margin-inline: 25px;
     margin-bottom: 15px;
-    margin-top: 4%;
+    margin-top: 15%;
     position: relative;
 }
 
@@ -291,6 +292,11 @@ footer img {
 }
 
 @media (max-width: 450px) {
+    .frame img {
+        width: 40%;
+        height: 20vh;
+    }
+
     h5 {
         width: 50%;
    }

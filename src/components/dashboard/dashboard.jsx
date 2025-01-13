@@ -13,6 +13,9 @@ import rectangle10 from '../../assets/Rectangle 10.png'
 import group7 from '../../assets/Group 7.png'
 import group9 from '../../assets/Group 9.png'
 import group10 from '../../assets/Group 10.png'
+import juki from '../../assets/juki.jpg'
+import needle from '../../assets/needle.jpg'
+import twolion from '../../assets/twolion.jpg'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { toast } from 'react-toastify'; 
@@ -39,7 +42,10 @@ const Dashboard = () => {
 	{id: 3, name: 'Juki Machine', price:58000, image: rectangle},
 	{id: 4, name: 'Butterfly Machine', price:120000, image: rectangl},
 	{id: 5, name: 'Singer Machine', price:49000, image: rectangle10},
-	{id: 6, name: 'Butterfly Machine', price:20000, image: rectangle}
+	{id: 6, name: 'Butterfly Machine', price:20000, image: rectangle},
+	{id: 7, name: 'Machine Needle', price:2000, image: needle},
+	{id: 8, name: 'Juki Machine', price:60000, image: juki},
+	{id: 9, name: 'TwoLion Machine', price:80000, image: twolion},
  ];
 
 
@@ -104,7 +110,6 @@ const Dashboard = () => {
 	navigate('/cart',{ state: { cartItems}})
  }
 
-
   return (
     <div className={styles.dashboard}>
       <div className={styles.nav}>
@@ -135,12 +140,15 @@ const Dashboard = () => {
 			<h5>Top categories</h5>
 			<p>All</p>
 	  </div>
-	  <div className={styles.frame}>
-			<img src={rectangle81} alt="" />
-			<img src={rectangle8} alt="" />
-			<img src={rectangle} alt="" />
-			<img src={rectangl} alt="" />
-			<img src={rectangle8} alt="" />
+	  <div className={styles.frameContainer}>
+			<div className={styles.frame}>
+				<img src={rectangle81} alt="" />
+				<img src={rectangle8} alt="" />
+				<img src={juki} alt="" />
+				<img src={rectangle8} alt="" />
+				<img src={needle} alt="" />
+				<img src={twolion} alt="" />
+			</div>
 		</div>
 	  <div className={styles.cartopt}>
 			<select id="">
