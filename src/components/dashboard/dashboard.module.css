@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-.dashboard {
-    background-color: #EFC8B121;
-}
-
 .nav {
     display: flex;
     flex-direction: row;
@@ -239,6 +235,7 @@ footer {
     padding-block: 15px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 footer img {
@@ -259,10 +256,20 @@ footer img {
     font-weight: 600;
     width: 55%;
     height: 2vh;
-    
     top: 0;
     right: 0;
     cursor: pointer;
+}
+
+.settings {
+    position: absolute;
+    
+    opacity: 0.8;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+
 }
  
 

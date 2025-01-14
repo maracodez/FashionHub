@@ -5,14 +5,10 @@
 }
 
 .signin {
-    background-color: #EFC8B121;
     padding-block: 5%;
-    height: 100vh;
 }
 
 .signin_pg {
-    background-color: transparent;
-   /* width: 70%;*/
     max-width: 50%;
     margin: 0 auto;
     display: flex;

@@ -59,8 +59,8 @@ const Signup = () => {
   return (
 		<div className={styles.signup}>
 			<div className={styles.sign}>
-				<p id={styles.arrow} onClick={() => navigate(-1)}>&lt;</p>
 				<div className={styles.head}>
+					<p id={styles.arrow} onClick={() => navigate(-1)}>&lt;</p>
 					<h2>Create your free account.</h2>
 				</div>
 				<form 

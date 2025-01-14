@@ -5,7 +5,6 @@
 }
 
 .cart {
-    background-color: #EFC8B121;
     padding: 20px;
 }
 
@@ -252,6 +251,8 @@ h3 {
     .promo,
     .buyNowBtn {
         width: 100%;
+        margin-inline: 0;
+        margin-block: 10px;
     }
 
     .promo button {
@@ -272,6 +273,7 @@ h3 {
     .promo  {
         border-radius: 10px;
         padding: 6px;
+        margin: 0%;
     }
 
     .promo button {

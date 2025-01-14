@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.signup {
-    background-color: #EFC8B121;
-    height: 100vh;
-}
-
 .sign {
     width: 60%;
     margin: 0 auto;
@@ -23,8 +18,7 @@
     margin-block: 5%;
     padding: 20px;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    gap: 25%;
 }
 
 #arrow {

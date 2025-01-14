@@ -46,7 +46,7 @@ const Checkout = () => {
   return (
     <div className={styles.checkout}>
         <div className={styles.header}>
-            <button onClick={() => navigate(-1)} className={styles.backBtn}>&larr;</button>
+            <button onClick={() => navigate('/cart')} className={styles.backBtn}>&larr;</button>
             <h1>Order Summary</h1>
         </div>
         <div className={styles.cartItems}>
@@ -56,7 +56,7 @@ const Checkout = () => {
                     <div className={styles.itemDetails}>
                         <div className={styles.priceName}>
                             <h3>{item.name}</h3>
-                            <p>Price: ${item.price * item.quantity.toLocaleString()}</p>
+                            <p>Price: ${item.price * item.quantity.toLocaleString()/1000}k</p>
                         </div>
                         <div className={styles.quantityControl}>
                             <button onClick={() => updateQuantity(index, 'decrease')}>-</button>

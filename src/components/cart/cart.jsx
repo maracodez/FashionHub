@@ -9,7 +9,7 @@ const Cart = () => {
 
 	const handleBack = () => {
 		//navigate back to the previous page
-		navigate(-1)
+		navigate('/dashboard')
 	}
 
 	const handleBuyNow = () => {

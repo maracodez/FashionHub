@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.payment {
-    background-color: #EFC8B121;
-    height: 100dvh;
-}
-
 .container {
     width: 90%;
     margin: 0 auto;

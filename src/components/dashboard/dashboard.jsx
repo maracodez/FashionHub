@@ -16,6 +16,7 @@ import group10 from '../../assets/Group 10.png'
 import juki from '../../assets/juki.jpg'
 import needle from '../../assets/needle.jpg'
 import twolion from '../../assets/twolion.jpg'
+import coat from '../../assets/coat.jpeg'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { toast } from 'react-toastify'; 
@@ -32,9 +33,9 @@ const Dashboard = () => {
 	navigate("/payment")
  }
 
- const handleSetting  = () => {
-	navigate("/change")
- }
+//  const handleSetting  = () => {
+// 	navigate("/change")
+//  }
 
  const products = [
 	{id: 1, name: 'Emel Machine', price:36000, image: rectang},
@@ -50,6 +51,7 @@ const Dashboard = () => {
 
 
  const [location, setLocation] = useState(null);
+ const [iconset, setIconset] = useState(null);
  const [error, setError] = useState(null);
  //for count down
  const [cartCount, setCartCount] = useState(0);
@@ -110,6 +112,16 @@ const Dashboard = () => {
 	navigate('/cart',{ state: { cartItems}})
  }
 
+ //handle settings
+
+ const handleSetting = () => {
+		if (iconset) {
+			setIconset(null)
+		} else {
+			setIconset('<div> </div>')
+		}
+ }
+
   return (
     <div className={styles.dashboard}>
       <div className={styles.nav}>
@@ -148,6 +160,7 @@ const Dashboard = () => {
 				<img src={rectangle8} alt="" />
 				<img src={needle} alt="" />
 				<img src={twolion} alt="" />
+				<img src={coat} alt="" />
 			</div>
 		</div>
 	  <div className={styles.cartopt}>
@@ -195,6 +208,10 @@ const Dashboard = () => {
 			<img src={group7} alt="" onClick={handlepay}/>
 			<img src={group9} alt="" onClick={handleSetting}/>
 	  </footer>
+	  <div className={styles.settings}>
+			{iconset && <p>Reset Password</p>}
+			{iconset && <p>Log out</p>}
+	  </div>
     </div>
   )
 }

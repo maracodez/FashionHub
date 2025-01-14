@@ -3,11 +3,6 @@
     box-sizing: border-box;
 }
 
-.checkout {
-    background-color: #EFC8B121;
-    height: 100vh;
-}
-
 .header {
     padding: 20px;
     border-bottom: 2px solid salmon;

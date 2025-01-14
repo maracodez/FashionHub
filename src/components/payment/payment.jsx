@@ -25,6 +25,17 @@ const Payment = () => {
 	const handleChange = (e) => {
 		setCardDetails({ ...cardDetails,[e.target.name]:e.target.value});
 	};
+	const handleExpiryChange = (e) => {
+        const { value } = e.target;
+    
+        const formattedValue = value
+            .replace(/[^0-9/]/g, "") 
+            .replace(/^(\d{2})(\d)/, "$1/$2")
+    
+        if (formattedValue.length <= 5) {
+            setCardDetails({ ...cardDetails, expiry: formattedValue });
+        }
+    };
 
 	//validate form inputs 
 	const validateInputs = () => {
@@ -34,7 +45,7 @@ const Payment = () => {
 			return "All fields are required"
 		}
 
-		if (!/^\d{2}\/\d{2}$/.test(expiry)) {
+		if (!/\d{2}\/\d{2}$/.test(expiry)) {
 			return "Expiry must be in MM/YY format."
 		}
 
@@ -61,6 +72,8 @@ const Payment = () => {
 		console.log("Processing payment with details:", cardDetails);
 
 		alert("Payment successful!")
+
+		navigate('/dashboard') 
 	}
 
   return (
@@ -103,8 +116,9 @@ const Payment = () => {
 						type="text" 
 						placeholder='MM/YY'
 						value={cardDetails.expiry}
-						onChange={handleChange}
-						
+						onChange={handleExpiryChange}
+						maxLength= "5"
+						required
 					/>
 					<br />
 					<label id={styles.card_label}>CVV</label>
@@ -114,7 +128,7 @@ const Payment = () => {
 						name='cvv'
 						value={cardDetails.cvv}
 						onChange={handleChange}
-						maxLength="4"
+						maxLength="3"
 						required
 					/>
 				</div>
