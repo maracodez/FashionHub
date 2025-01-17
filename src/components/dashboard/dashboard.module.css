@@ -260,17 +260,6 @@ footer img {
     right: 0;
     cursor: pointer;
 }
-
-.settings {
-    position: absolute;
-    
-    opacity: 0.8;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 50%;
-
-}
  
 
 @media (max-width: 890px) {

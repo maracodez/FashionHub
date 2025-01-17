@@ -33,9 +33,9 @@ const Dashboard = () => {
 	navigate("/payment")
  }
 
-//  const handleSetting  = () => {
-// 	navigate("/change")
-//  }
+ const handleSetting  = () => {
+	navigate("/change")
+ }
 
  const products = [
 	{id: 1, name: 'Emel Machine', price:36000, image: rectang},
@@ -51,7 +51,6 @@ const Dashboard = () => {
 
 
  const [location, setLocation] = useState(null);
- const [iconset, setIconset] = useState(null);
  const [error, setError] = useState(null);
  //for count down
  const [cartCount, setCartCount] = useState(0);
@@ -112,15 +111,6 @@ const Dashboard = () => {
 	navigate('/cart',{ state: { cartItems}})
  }
 
- //handle settings
-
- const handleSetting = () => {
-		if (iconset) {
-			setIconset(null)
-		} else {
-			setIconset('<div> </div>')
-		}
- }
 
   return (
     <div className={styles.dashboard}>
@@ -208,10 +198,6 @@ const Dashboard = () => {
 			<img src={group7} alt="" onClick={handlepay}/>
 			<img src={group9} alt="" onClick={handleSetting}/>
 	  </footer>
-	  <div className={styles.settings}>
-			{iconset && <p>Reset Password</p>}
-			{iconset && <p>Log out</p>}
-	  </div>
     </div>
   )
 }
