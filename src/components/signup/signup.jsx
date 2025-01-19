@@ -87,6 +87,7 @@ const Signup = () => {
 						<label id={styles.form_label}>Password:</label>
 						<input
 							type="password" 
+							placeholder='password'
 							id={styles.form_input}
 							onChange={(e) => setPassword(e.target.value)}
 							required
@@ -97,6 +98,7 @@ const Signup = () => {
 						<label id={styles.form_label}>Confirm password:</label>
 						<input 
 							type="password" 
+							placeholder='confirm password'
 							id={styles.form_input}
 							onChange={(e) => setConfirmPassword(e.target.value)}
 							required

@@ -191,8 +191,14 @@ h2 {
         height: 100%;
     }
 
-    h2 {
-        font-size: 2rem;
+    .head {
+        margin-block: 5%;
+        padding: 20px;
+        gap: 0%;
+    }
+
+    .head h2 {
+        font-size: 1.8rem;
     }
 
     .signup_form_pg {
@@ -202,7 +208,7 @@ h2 {
     }
 
     #form_label {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     #hideicon,

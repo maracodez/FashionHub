@@ -55,7 +55,8 @@ const Signin = () => {
 					<label id={styles.label}>Password:</label>
 					<input
 						type="password" 
-						id={styles.input}  
+						id={styles.input} 
+						placeholder='password' 
 						required
 						onChange={(e) => setPassword(e.target.value)}
 					/>
