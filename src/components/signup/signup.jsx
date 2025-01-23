@@ -25,6 +25,8 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [confirmpassword, setConfirmPassword] = useState("");
   const [name, setName] = useState("");
+  const [passwordVisible, setPasswordVisible] = useState(false)
+  const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false)
   
   const handleSignup= async (e)=> {
 	e.preventDefault();
@@ -86,24 +88,34 @@ const Signup = () => {
 					<div  className={styles.hidepassword}>
 						<label id={styles.form_label}>Password:</label>
 						<input
-							type="password" 
+							type={passwordVisible ? "text" : "password"}
 							placeholder='password'
 							id={styles.form_input}
 							onChange={(e) => setPassword(e.target.value)}
 							required
 						/>
-						<img src={hideicon} alt="hideicon" id={styles.hideicon}/>
+						<img 
+							src={hideicon} 
+							alt="hideicon" 
+							id={styles.hideicon}
+							onClick={() => setPasswordVisible(!passwordVisible)}
+						/>
 					</div>
 					<div className={styles.showpassword}>
 						<label id={styles.form_label}>Confirm password:</label>
 						<input 
-							type="password" 
+							type={confirmPasswordVisible ? "text" : "password"}
 							placeholder='confirm password'
 							id={styles.form_input}
 							onChange={(e) => setConfirmPassword(e.target.value)}
 							required
 						/>
-						<img src={showicon} alt="" id={styles.showicon}/>
+						<img 
+							src={showicon} 
+							alt="" 
+							id={styles.showicon}
+							onClick={() => setConfirmPasswordVisible(!confirmPasswordVisible)}
+						/>
 					</div>
 					<button 
 						id={styles.createacc}

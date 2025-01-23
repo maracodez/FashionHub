@@ -19,6 +19,7 @@ const Signin = () => {
  //login function
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const [passwordVisible, setPasswordVisible] = useState(false)
 
 	const handleSignin = async(e) => {
 		e.preventDefault();
@@ -54,7 +55,7 @@ const Signin = () => {
 				<div className={styles.password}>
 					<label id={styles.label}>Password:</label>
 					<input
-						type="password" 
+						type={passwordVisible ? "text" : "password"}
 						id={styles.input} 
 						placeholder='password' 
 						required
@@ -64,6 +65,7 @@ const Signin = () => {
 						src={showicon} 
 						alt="" 
 						id={styles.signineye}
+						onClick={() => setPasswordVisible(!passwordVisible)}
 					/>
 				</div>
                
